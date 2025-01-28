@@ -1,0 +1,15 @@
+html {
+	font-family: sans-serif;
+}
+
+nav {
+	clear: both;
+}
+
+.prev {
+	float: left;
+}
+
+.next {
+	float: right;
+}

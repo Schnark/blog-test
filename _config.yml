@@ -1,0 +1,12 @@
+domain: schnark.github.io
+url: https://schnark.github.io
+baseurl: /blog-test
+
+permalink: pretty
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/:year/:month/"

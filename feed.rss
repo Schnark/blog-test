@@ -7,18 +7,16 @@ layout: none
 	<channel>
 		<title>Blog-Test</title>
 		<description>Beschreibung</description>
-		<link>{{ site.url }}</link>
+		<link>{{ site.url }}{{ site.baseurl }}</link>
 		<language>de</language>
 
-		{% for post in site.posts limit: 5 %}
+{% for post in site.posts limit: 5 %}
 		<item>
 			<title>{{ post.title }}</title>
 			<link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
-			<description>
-				<![CDATA[{{ post.content }}]]>
-			</description>
+			<description><![CDATA[{{ post.content }}]]></description>
 		</item>
-		{% endfor %}
+{% endfor %}
 
 	</channel>
 </rss>

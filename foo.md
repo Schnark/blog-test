@@ -14,17 +14,15 @@ Text mit [Link](index.md)
 
 Text mit **Formatierung**
 
-<figure markdown="1">
-![Bild](files/test.png)
-<figcaption>Bild</figcaption>
-</figure>
+{:.gallery}
+* [![Bild](files/test.png)](files/test.png)
+* [![Bild](files/test.png)](files/test.png)
 
-<!--TODO: Bild mit Link auf Großformat, Gallerie, width="", height=""-->
+  Bildunterschrift
+* [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
+* [![Bild](files/test.png)](files/test.png)
 
+{:.test}
 > Zitat
 >
 > Zitat
-{:.test}
-
-<!--TODO: verschiedene Klassen mit jeweiligem Stil: tagebuch, text, brief-->
-

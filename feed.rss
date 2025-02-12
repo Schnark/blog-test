@@ -7,7 +7,7 @@ layout: none
 	<channel>
 		<title>Blog-Test</title>
 		<description>Beschreibung</description>
-		<link>{{ site.url }}{{ site.baseurl }}</link>
+		<link>{{ site.url }}{{ site.baseurl }}/</link>
 		<language>de</language>
 
 {% for post in site.posts limit: 5 %}

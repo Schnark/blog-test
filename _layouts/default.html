@@ -8,4 +8,12 @@
 <a href="{{site.url}}{{site.baseurl}}/">Start</a>
 </header>
 {{content}}
+<footer><ul>
+<li><a href="{{site.url}}{{site.baseurl}}/">Startseite</a></li>
+<li><a href="{{site.url}}{{site.baseurl}}/feed.rss">RSS-Feed</a></li>
+</ul><p>
+{% assign months = "Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember" | split: "|" %}
+{% assign m = site.time | date: "%-m" | minus: 1 %}
+Stand: {{months[m]}} {{site.time | date: "%Y"}}
+</p></footer>
 </body></html>

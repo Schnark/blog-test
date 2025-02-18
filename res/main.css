@@ -51,6 +51,16 @@ h1 {
 	display: inline-block;
 	vertical-align: middle;
 }
+@media (max-width: 560px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+@media (max-width: 400px) {
+	h1 {
+		font-size: 1.75em;
+	}
+}
 
 /*Navigation, Footer*/
 nav,
@@ -130,7 +140,8 @@ p {
 	border-radius: 3px;
 	box-shadow: 3px 3px #aaa;
 	padding: 3px;
-	margin: 1em 0;
+	display: inline-table;
+	margin: 1em 1em 1em 0;
 }
 .month td {
 	text-align: right;
@@ -189,7 +200,7 @@ blockquote.image::before {
 	font-size: 90%;
 	text-decoration: underline;
 }
-p :first-child.time {
+.time.float {
 	float: right;
 	margin-left: 0.5em;
 }

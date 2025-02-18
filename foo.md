@@ -28,7 +28,8 @@ Text mit [internem Link](index.md) und [externem Link](http://example.org)
 Ein Brief:
 
 {:.letter}
-> <p class="date">Zum 1. 1. 2000</p>
+> {:.date}
+> Zum 1. 1. 2000
 >
 > Alles Gute zum neuen Jahr!<br>
 > Unterschrift
@@ -36,21 +37,22 @@ Ein Brief:
 Ein Tagebucheintrag:
 
 {:.diary}
-> <p class="date">1. 1. 2000</p>
+> {:.date}
+> 1. 1. 2000
 >
-> <time class="time"><span>10</span><span>:</span><span>00</span></time> Jetzt beginnt das neue Jahr (eigentlich begann es schon um <time class="time"><span>0</span><span>:</span><span>00</span></time>).
+> <time class="time float"><span>10</span><span>:</span><span>00</span></time> Jetzt beginnt das neue Jahr (eigentlich begann es schon um <time class="time"><span>0</span><span>:</span><span>00</span></time>).
 >
 > Noch mehr Text
 
 Bilder:
 
 {:.gallery}
-* [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
-* [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
+* [![Bild](files/test.png){: width="10" height="10"}<!--[-->](files/test.png)
+* [![Bild](files/test.png){: width="10" height="10"}<!--[-->](files/test.png)
 
   Bildunterschrift
-* [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
-* [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
+* [![Bild](files/test.png){: width="10" height="10"}<!--[-->](files/test.png)
+* [![Bild](files/test.png){: width="10" height="10"}<!--[-->](files/test.png)
 
 {:.image}
-> [![Bild](files/test.png){: width="10" height="10"}](files/test.png)
+> [![Bild](files/test.png){: width="10" height="10"}<!--[-->](files/test.png)

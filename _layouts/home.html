@@ -2,5 +2,7 @@
 layout: default
 ---
 <article>
+{% assign post = site.posts.first %}
+<p>Neuester Eintrag: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
 {{content}}
 </article>

@@ -1,0 +1,18 @@
+---
+layout: page
+---
+## Alle Seiten
+{% assign year = 1999 %}
+<h3>1999</h3>
+<ul>
+{%for post in site.posts | reverse %}
+{% assign y = post.date | date: "%Y" %}
+{% unless y == year %}
+{% assign year = y %}
+</ul>
+<h3>{{year}}</h3>
+<ul>
+{% endunless %}
+<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+{% endfor %}
+</ul>

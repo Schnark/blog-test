@@ -5,7 +5,7 @@ layout: page
 {% assign year = 1999 %}
 <h3>1999</h3>
 <ul>
-{%for post in site.posts | reverse %}
+{% for post in site.posts reversed %}
 {% assign y = post.date | date: "%Y" %}
 {% unless y == year %}
 {% assign year = y %}

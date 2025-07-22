@@ -2,7 +2,7 @@
 layout: page
 ---
 ## Alle Seiten
-{% assign year = 1999 %}
+{% assign year = "1999" %}
 <h3>1999</h3>
 <ul>
 {% for post in site.posts reversed %}
